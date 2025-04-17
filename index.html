@@ -46,66 +46,66 @@
         </div>
         <div class="hero-img"></div>
     </section>
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-img">
-                <img src="./img/IMG-20221223-WA0085.jpg" alt="Mohammed Hassan">
-            </div>
-            <div class="about-text">
-                <p>Hi there! I'm Mohammed Mbarak Hassan, a passionate tech professional...</p>
-                <p>With a background in Mathematics and several certifications...</p>
-                <p>When I'm not coding or analyzing data, you'll find me exploring new technologies...</p>
-                <a href="https://drive.google.com/file/d/1_-XZnMD1QQd9MOf_l-6enyQfx2zHWOV1/view?usp=sharing"
-                    class="cv-download btn" id="downloadCvBtn">Download CV</a>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="./img/IMG-20221223-WA0085.jpg" alt="Mohammed Hassan">
+                </div>
+                <div class="about-text">
+                    <p>Hi there! I'm Mohammed Mbarak Hassan, a passionate tech professional...</p>
+                    <p>With a background in Mathematics and several certifications...</p>
+                    <p>When I'm not coding or analyzing data, you'll find me exploring new technologies...</p>
+                    <a href="https://drive.google.com/file/d/1_-XZnMD1QQd9MOf_l-6enyQfx2zHWOV1/view?usp=sharing"
+                        class="cv-download btn" id="downloadCvBtn">Download CV</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<style>
-    .about-img {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 0 auto;
-        border: 3px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+    <style>
+        .about-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    .about-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-</style>
+        .about-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const downloadBtn = document.getElementById('downloadCvBtn');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const downloadBtn = document.getElementById('downloadCvBtn');
 
-        downloadBtn.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent the default link behavior
+            downloadBtn.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default link behavior
 
-            // The URL of your CV file
-            const cvUrl = 'https://drive.google.com/uc?export=download&id=1_-XZnMD1QQd9MOf_l-6enyQfx2zHWOV1';
+                // The URL of your CV file
+                const cvUrl = 'https://drive.google.com/uc?export=download&id=1_-XZnMD1QQd9MOf_l-6enyQfx2zHWOV1';
 
-            // Create a temporary anchor element
-            const link = document.createElement('a');
-            link.href = cvUrl;
-            link.setAttribute('download', 'Mohammed_Hassan_CV.pdf'); // Set the filename for download
-            document.body.appendChild(link);
+                // Create a temporary anchor element
+                const link = document.createElement('a');
+                link.href = cvUrl;
+                link.setAttribute('download', 'Mohammed_Hassan_CV.pdf'); // Set the filename for download
+                document.body.appendChild(link);
 
-            // Trigger the download
-            link.click();
+                // Trigger the download
+                link.click();
 
-            // Clean up
-            document.body.removeChild(link);
+                // Clean up
+                document.body.removeChild(link);
+            });
         });
-    });
-</script>
+    </script>
 
     <!-- Skills Section -->
     <section id="skills">
@@ -320,306 +320,309 @@
         </div>
     </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I've worked on:</p>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-                        alt="Kenya Farmers E-commerce Platform">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Kenya Farmers E-commerce Platform</h3>
-                    <p class="project-description">Developed an agricultural marketplace connecting local farmers
-                        directly with buyers, featuring inventory management, payment processing, and delivery tracking.
-                    </p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                        <span>Payment Integration</span>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I've worked on:</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                            alt="Kenya Farmers E-commerce Platform">
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo</a>
-                        <a href="#" class="project-link">Source Code</a>
+                    <div class="project-content">
+                        <h3 class="project-title">Kenya Farmers E-commerce Platform</h3>
+                        <p class="project-description">Developed an agricultural marketplace connecting local farmers
+                            directly with buyers, featuring inventory management, payment processing, and delivery
+                            tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Payment Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80"
+                            alt="Income-Expense Tracker">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Income-Expense Tracker</h3>
+                        <p class="project-description">Created a financial management application with robust data
+                            visualization, enabling users to track and analyze personal income and expenses.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Data Visualization</span>
+                            <span>User Authentication</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Movie Explorer App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Movie Explorer App</h3>
+                        <p class="project-description">Built a comprehensive movie discovery application with search
+                            functionality, ratings, reviews, and personalized recommendations using machine learning.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Python Flask</span>
+                            <span>TMDB API</span>
+                            <span>Recommendation Engine</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80"
-                        alt="Income-Expense Tracker">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Income-Expense Tracker</h3>
-                    <p class="project-description">Created a financial management application with robust data
-                        visualization, enabling users to track and analyze personal income and expenses.</p>
-                    <div class="project-tech">
-                        <span>Django</span>
-                        <span>Data Visualization</span>
-                        <span>User Authentication</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo</a>
-                        <a href="#" class="project-link">Source Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        alt="Movie Explorer App">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Movie Explorer App</h3>
-                    <p class="project-description">Built a comprehensive movie discovery application with search
-                        functionality, ratings, reviews, and personalized recommendations using machine learning.</p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>Python Flask</span>
-                        <span>TMDB API</span>
-                        <span>Recommendation Engine</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo</a>
-                        <a href="#" class="project-link">Source Code</a>
-                    </div>
-                </div>
+            <div class="projects-cta" style="text-align: center; margin-top: 40px;">
+                <a href="https://github.com/Mbarak-jr" class="btn">View All Projects</a>
             </div>
         </div>
-        <div class="projects-cta" style="text-align: center; margin-top: 40px;">
-            <a href="https://github.com/Mbarak-jr" class="btn">View All Projects</a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<style>
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-top: 40px;
-    }
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
 
-    .project-card {
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
 
-    .project-card:hover {
-        transform: translateY(-5px);
-    }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
 
-    .project-img img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
+        .project-img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
 
-    .project-content {
-        padding: 20px;
-    }
+        .project-content {
+            padding: 20px;
+        }
 
-    .project-title {
-        margin-top: 0;
-        color: #333;
-    }
+        .project-title {
+            margin-top: 0;
+            color: #333;
+        }
 
-    .project-description {
-        color: #666;
-        line-height: 1.6;
-    }
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+        }
 
-    .project-tech {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 15px 0;
-    }
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px 0;
+        }
 
-    .project-tech span {
-        background: #f0f0f0;
-        padding: 4px 10px;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        color: #555;
-    }
+        .project-tech span {
+            background: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #555;
+        }
 
-    .project-links {
-        display: flex;
-        gap: 15px;
-    }
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
 
-    .project-link {
-        color: #2c3e50;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s;
-    }
+        .project-link {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-    .project-link:hover {
-        color: #3498db;
-    }
+        .project-link:hover {
+            color: #3498db;
+        }
 
-    .btn {
-        display: inline-block;
-        background: #2c3e50;
-        color: white;
-        padding: 12px 25px;
-        border-radius: 4px;
-        text-decoration: none;
-        font-weight: 500;
-        transition: background 0.3s;
-    }
+        .btn {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
 
-    .btn:hover {
-        background: #3498db;
-    }
-</style>
+        .btn:hover {
+            background: #3498db;
+        }
+    </style>
 
-<!-- Contact Section -->
-<section id="contact" style="background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%); padding: 80px 0;">
-    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 15px; color: #2c3e50;">Get In Touch</h2>
-        <p
-            style="text-align: center; max-width: 700px; margin: 0 auto 50px; font-size: 1.1rem; color: #555; line-height: 1.6;">
-            I'm currently available for freelance work or full-time positions. Whether you have a project to discuss or
-            just want to say hi, I'll do my best to get back to you!
-        </p>
+    <!-- Contact Section -->
+    <section id="contact" style="background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%); padding: 80px 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 15px; color: #2c3e50;">Get In Touch</h2>
+            <p
+                style="text-align: center; max-width: 700px; margin: 0 auto 50px; font-size: 1.1rem; color: #555; line-height: 1.6;">
+                I'm currently available for freelance work or full-time positions. Whether you have a project to discuss
+                or
+                just want to say hi, I'll do my best to get back to you!
+            </p>
 
-        <div class="contact-container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
-            <!-- Contact Info Card -->
-            <div class="contact-info"
-                style="flex: 1; min-width: 300px; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-                <h3
-                    style="font-size: 1.5rem; margin-bottom: 30px; color: #2c3e50; position: relative; padding-bottom: 15px;">
-                    Contact Information
-                    <span
-                        style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: #3498db;"></span>
-                </h3>
-
-                <div class="contact-items" style="display: grid; gap: 25px;">
-                    <div class="contact-item" style="display: flex; gap: 15px;">
-                        <div class="contact-icon"
-                            style="width: 50px; height: 50px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #3498db;">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4 style="margin: 0 0 5px 0; color: #555; font-size: 1rem;">Email</h4>
-                            <p style="margin: 0; font-size: 0.95rem; color: #3498db; font-weight: 500;">
-                                mohammedmbarak77@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item" style="display: flex; gap: 15px;">
-                        <div class="contact-icon"
-                            style="width: 50px; height: 50px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #3498db;">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4 style="margin: 0 0 5px 0; color: #555; font-size: 1rem;">Phone</h4>
-                            <p style="margin: 0; font-size: 0.95rem; color: #3498db; font-weight: 500;">+254707893724</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item" style="display: flex; gap: 15px;">
-                        <div class="contact-icon"
-                            style="width: 50px; height: 50px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #3498db;">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4 style="margin: 0 0 5px 0; color: #555; font-size: 1rem;">Location</h4>
-                            <p style="margin: 0; font-size: 0.95rem; color: #3498db; font-weight: 500;">Nairobi,
-                                <br> 00100, Kenya</p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="social-links" style="margin-top: 40px;">
-                    <h4 style="font-size: 1.1rem; margin-bottom: 15px; color: #555;">Connect With Me</h4>
-                    <div style="display: flex; gap: 15px;">
-                        <a href="#"
-                            style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3498db; text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#"
-                            style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3498db; text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#"
-                            style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3498db; text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#"
-                            style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3498db; text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-dribbble"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form" style="flex: 1; min-width: 300px;">
-                <form id="contactForm"
-                    style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+            <div class="contact-container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+                <!-- Contact Info Card -->
+                <div class="contact-info"
+                    style="flex: 1; min-width: 300px; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
                     <h3
                         style="font-size: 1.5rem; margin-bottom: 30px; color: #2c3e50; position: relative; padding-bottom: 15px;">
-                        Send Me a Message
+                        Contact Information
                         <span
                             style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: #3498db;"></span>
                     </h3>
 
-                    <div class="form-group" style="margin-bottom: 20px;">
-                        <label for="name"
-                            style="display: block; margin-bottom: 8px; font-size: 0.9rem; color: #555;">Your
-                            Name</label>
-                        <input type="text" id="name" name="name" required
-                            style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; transition: border 0.3s;">
+                    <div class="contact-items" style="display: grid; gap: 25px;">
+                        <div class="contact-item" style="display: flex; gap: 15px;">
+                            <div class="contact-icon"
+                                style="width: 50px; height: 50px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #3498db;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 style="margin: 0 0 5px 0; color: #555; font-size: 1rem;">Email</h4>
+                                <p style="margin: 0; font-size: 0.95rem; color: #3498db; font-weight: 500;">
+                                    mohammedmbarak77@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" style="display: flex; gap: 15px;">
+                            <div class="contact-icon"
+                                style="width: 50px; height: 50px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #3498db;">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 style="margin: 0 0 5px 0; color: #555; font-size: 1rem;">Phone</h4>
+                                <p style="margin: 0; font-size: 0.95rem; color: #3498db; font-weight: 500;">
+                                    +254707893724</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" style="display: flex; gap: 15px;">
+                            <div class="contact-icon"
+                                style="width: 50px; height: 50px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #3498db;">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 style="margin: 0 0 5px 0; color: #555; font-size: 1rem;">Location</h4>
+                                <p style="margin: 0; font-size: 0.95rem; color: #3498db; font-weight: 500;">Nairobi,
+                                    Kenya</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="form-group" style="margin-bottom: 20px;">
-                        <label for="email"
-                            style="display: block; margin-bottom: 8px; font-size: 0.9rem; color: #555;">Your
-                            Email</label>
-                        <input type="email" id="email" name="email" required
-                            style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; transition: border 0.3s;">
+                    <div class="social-links" style="margin-top: 40px;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 15px; color: #555;">Connect With Me</h4>
+                        <div style="display: flex; gap: 15px;">
+                            <a href="#"
+                                style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3498db; text-decoration: none; transition: all 0.3s;">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#"
+                                style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3498db; text-decoration: none; transition: all 0.3s;">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#"
+                                style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3498db; text-decoration: none; transition: all 0.3s;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#"
+                                style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3498db; text-decoration: none; transition: all 0.3s;">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="form-group" style="margin-bottom: 20px;">
-                        <label for="subject"
-                            style="display: block; margin-bottom: 8px; font-size: 0.9rem; color: #555;">Subject</label>
-                        <input type="text" id="subject" name="subject" required
-                            style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; transition: border 0.3s;">
-                    </div>
+                <!-- Contact Form -->
+                <div class="contact-form" style="flex: 1; min-width: 300px;">
+                    <form id="contactForm"
+                        style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                        <h3
+                            style="font-size: 1.5rem; margin-bottom: 30px; color: #2c3e50; position: relative; padding-bottom: 15px;">
+                            Send Me a Message
+                            <span
+                                style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: #3498db;"></span>
+                        </h3>
 
-                    <div class="form-group" style="margin-bottom: 25px;">
-                        <label for="message"
-                            style="display: block; margin-bottom: 8px; font-size: 0.9rem; color: #555;">Your
-                            Message</label>
-                        <textarea id="message" name="message" rows="5" required
-                            style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; resize: vertical; transition: border 0.3s;"></textarea>
-                    </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label for="name"
+                                style="display: block; margin-bottom: 8px; font-size: 0.9rem; color: #555;">Your
+                                Name</label>
+                            <input type="text" id="name" name="name" required
+                                style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; transition: border 0.3s;">
+                        </div>
 
-                    <button type="submit" class="btn"
-                        style="background: #3498db; color: white; border: none; padding: 14px 30px; border-radius: 6px; font-size: 1rem; font-weight: 500; cursor: pointer; transition: background 0.3s; width: 100%;">
-                        Send Message
-                        <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
-                    </button>
-                </form>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label for="email"
+                                style="display: block; margin-bottom: 8px; font-size: 0.9rem; color: #555;">Your
+                                Email</label>
+                            <input type="email" id="email" name="email" required
+                                style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; transition: border 0.3s;">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label for="subject"
+                                style="display: block; margin-bottom: 8px; font-size: 0.9rem; color: #555;">Subject</label>
+                            <input type="text" id="subject" name="subject" required
+                                style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; transition: border 0.3s;">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <label for="message"
+                                style="display: block; margin-bottom: 8px; font-size: 0.9rem; color: #555;">Your
+                                Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; resize: vertical; transition: border 0.3s;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn"
+                            style="background: #3498db; color: white; border: none; padding: 14px 30px; border-radius: 6px; font-size: 1rem; font-weight: 500; cursor: pointer; transition: background 0.3s; width: 100%;">
+                            Send Message
+                            <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Font Awesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Footer -->
     <footer>
@@ -683,3 +686,5 @@
         }
     </script>
 </body>
+
+</html>
